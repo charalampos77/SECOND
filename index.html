@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Η Πρώτη μου Σελίδα</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 50px;
+            text-align: center;
+        }
+        .container {
+            background-color: #ffffff;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #0066cc;
+        }
+        button {
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #004999;
+        }
+        #message {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #28a745;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Καλώς ήρθατε!</h1>
+        <p>Αυτή είναι μια απλή, μοντέρνα και έτοιμη προς χρήση HTML σελίδα.</p>
+        
+        <button onclick="showMessage()">Κάνε κλικ εδώ</button>
+        
+        <div id="message"></div>
+    </div>
+
+    <script>
+        function showMessage() {
+            const messageDiv = document.getElementById("message");
+            messageDiv.textContent = "Μπράβο! Η σελίδα σου λειτουργεί τέλεια! 🎉";
+        }
+    </script>
+
+</body>
+</html>
